@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheet.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">Savvy<br />Insight Out</div>
+      <div class="navbar-right">
+        <a href="#" class="social-link">LinkedIn</a>
+        <a href="#" class="social-link">GitHub</a>
+      </div>
+    </nav>
+    <main>
+      <div class="layout">
+        <h2>Dealer Hand</h2>
+        <div class="wrapper">
+          <div class="cards" id="dealer"></div>
+        </div>
+        <h2>Player Hand</h2>
+        <div class="wrapper">
+          <div class="cards" id="player"></div>
+        </div>
+        <div class="wrapper">
+          <div class="container" id="button-container">
+            <button id="hit">Hit</button>
+            <button id="pass">Pass</button>
+          </div>
+          <div>
+            <br />
+            <input
+              type="number"
+              id="bet-input"
+              placeholder="Enter bet amount"
+            />
+            <button id="place-bet">Place Bet</button>
+            <span>Player Balance: $<span id="player-balance">1000</span></span>
+          </div>
+        </div>
+        <div class="background" id="notice">
+          <div class="notice">
+            <p></p>
+            <button id="next-hand">Deal Next Hand</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+
+  <script src="./scripts.js" async defer></script>
+</html>
