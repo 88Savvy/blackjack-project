@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-  <title>Blackjack</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
-
-<body>
-  <div class="layout">
-    <h2>Dealer Hand</h2>
-    <div class="wrapper">
-      <div class="cards" id="dealer">
+  <body>
+    <div class="layout">
+      <h2>Dealer Hand</h2>
+      <div class="wrapper">
+        <div class="cards" id="dealer"></div>
+      </div>
+      <h2>Player Hand</h2>
+      <div class="wrapper">
+        <div class="cards" id="player"></div>
+      </div>
+      <div class="wrapper">
+        <div class="container" id="button-container">
+          <button id="hit">Hit</button>
+          <button id="pass">Pass</button>
+        </div>
+      </div>
+      <div>
+        <input type="number" id="bet-input" placeholder="Enter bet amount" />
+        <button id="place-bet">Place Bet</button>
+        <span>Player Balance: $<span id="player-balance">1000</span></span>
+      </div>
+      <div class="background" id="notice">
+        <div class="notice">
+          <p></p>
+          <button id="next-hand">Deal Next Hand</button>
+        </div>
+        <div class="background" id="game-over-notice" style="display: none">
+          <p>Game Over</p>
+        </div>
+        <div class="background" id="you-win-notice" style="display: none">
+          <p>You Win! Dealer's gone broke!</p>
+        </div>
+        <button id="play-again">Play Again?</button>
       </div>
     </div>
-    <h2>Player Hand</h2>
-    <div class="wrapper">
-      <div class="cards" id="player">
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="container" id="button-container">
-        <button id="hit">Hit</button>
-        <button id="pass">Pass</button>
-      </div>
-    </div>
-    <div>
-      <input
-        type="number"
-        id="bet-input"
-        placeholder="Enter bet amount"
-      />
-      <button id="place-bet">Place Bet</button>
-      <span>Player Balance: $<span id="player-balance">1000</span></span>
-    </div>
-    <div class="background" id="notice">
-      <div class="notice">
-        <p></p>
-        <button id="next-hand">Deal Next Hand</button>
-      </div>
-      <div id="game-over" style="display: none;">
-        <p>Game Over</p>
-        <button id="play-again-1">Play Again?</button>
-      </div>
-      <div id="you-win" style="display: none;">
-        <p>You Win! Dealer's gone broke!</p>
-        <button id="play-again-2">Play Again?</button>
-      </div>
-    </div>
-  </div>
-</body>
-
+  </body>
+  <script src="scripts.js" defer></script>
 </html>
